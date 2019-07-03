@@ -17,7 +17,7 @@ public class Sdk {
         // TODO Add stetho network interceptor
 
         return D2Configuration.builder()
-                .appName("skeleton_App")
+                .appName("achalajayatilleke")
                 .appVersion("0.0.1")
                 .readTimeoutInSeconds(30)
                 .connectTimeoutInSeconds(30)

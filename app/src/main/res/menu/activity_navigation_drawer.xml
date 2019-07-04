@@ -22,7 +22,10 @@
             android:title="@string/title_activity_d2_errors" />
 
         <!--TODO Add item to launch foreign keys activity-->
-
+        <item
+            android:id="@+id/navFKViolations"
+            android:icon="@drawable/ic_foreign_key_black_24dp"
+            android:title="@string/title_activity_fk_violations" />
     </group>
 
     <item android:title="@string/data_management">

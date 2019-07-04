@@ -7,10 +7,16 @@ import com.example.android.androidskeletonapp.ui.base.SubListItemHolder;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.hisp.dhis.android.core.imports.TrackerImportConflict;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class TrackerImportConflictsAdapter extends RecyclerView.Adapter<SubListItemHolder> {
 
     // TODO bind conflicts to sub_list_item.xml
 
+    private List<TrackerImportConflict> trackerImportConflictList = new ArrayList<>();
     @NonNull
     @Override
     public SubListItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -26,4 +32,9 @@ public class TrackerImportConflictsAdapter extends RecyclerView.Adapter<SubListI
     public int getItemCount() {
         return 0;
     }
+    public void setTrackerImportConflicts(List<TrackerImportConflict> trackerImportConflicts) {
+        this.trackerImportConflictList = trackerImportConflicts;
+        notifyDataSetChanged();
+    }
+
 }
